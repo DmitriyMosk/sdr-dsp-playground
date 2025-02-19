@@ -9,7 +9,10 @@ testChrsTrueDecoded = ascii_decode(testChrsTrueEncoded);
 disp(testChrsTrue);
 disp(testChrsTrueDecoded);
 
+conv_codec = conv_encoder(testChrsTrueEncoded);
 
+disp(conv_codec)
+disp(conv_decoder(conv_codec))
 % testChrsFalse = '!'; 
 % disp(can_ascii_encode(testChrsFalse));
 % testChrsFalseEncoded = ascii_encode(testChrsFalse);
@@ -18,5 +21,3 @@ disp(testChrsTrueDecoded);
 % testChrsFalseDecoded = ascii_decode(testChrsFalseEncoded);
 % disp(testChrsFalse);
 % disp(testChrsFalseDecoded);
-
-:-1 :-1 :-1 :-1
